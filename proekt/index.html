@@ -1,1 +1,178 @@
+<!DOCTYPE html>
 
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Mojata stranica</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+        <header id="main-header">
+            <div class="container">
+                <h1>Мојата страница!</h1>
+            </div>
+        </header>
+
+        <nav id="navbar">
+            <div class="container">
+                <ul>
+                    <li><a href="#home">Дома</a></li>
+                    <li><a href="#favourites">Омилени</a></li>
+                    <li><a href="#galery">Галерија</a></li>
+                    <li><a href="#blog">Блог</a></li>
+                    <li><a href="#questionnaire">Анкета за посетители</a></li>
+                    <li><a href="#contact">Контакт</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="showcase">
+            <div class="container">
+                <h1>Добредојдовте!</h1>
+            </div>
+        </section>
+
+        <div class="container" id="home">
+            <section id="main">
+                <h3>Здраво!</h3>
+                <p>
+                    Моето име е Ивана Динева и ова е мојата прва сопствена страница. Јас имам 20 години. Родена сум на <em>06 Mарт 2001.</em>Родена сум и живеам во Гевгелија. Основно училиште завршив во "Владо Кантарџиев" во Гевгелија. Средно училиште завршив во "Yahya Kemal College" во Струмица. Моментално сум студент на Факултетот за електротехника и информациски технологии. Ме интересираат:
+                    <ul>
+                        <li>Книги</li>
+                        <li>Математика</li>
+                        <li>Програмирање</li>
+                        <li>Филмови</li>
+                        <li>Танцување</li>
+                    </ul>
+                </p>
+            </section>
+
+            <aside id="sidebar">
+                <p>
+                    Ова е моја фотографија.
+                    <a href="images/jass.jpg" target="_blank">
+                        <img src="images/jass.jpg" alt="A picture of me" style="height: 30%;">
+                    </a>
+                </p>
+            </aside>
+        </div>
+
+       <!-- <hr> -->
+
+        <div class="container" id="favourites">
+            <h3>Омилени нешта</h3>
+            <div class="block">
+                <h5>Музика</h5>
+                <p>
+                    Јас слушам секаков тип на музика. Моја омилена пеачка е Александра Јанева. А нејзина омилена песна ми е
+                    <a href="https://www.youtube.com/watch?v=ggjrBbmRcj4" target="_blank">Еве ме пак</a>
+                    . Имам и уште една омилена, тоа е Тијана Богичевич, а омилена песна од неа ми е <a href="https://www.youtube.com/watch?v=_VLYRulwxU0" target="_blank">Bezuslovno</a>.
+                    <br>
+                    <img src="images/aleksandra.jpg" alt="Aleksandra Janeva" style="width: 51%">
+                </p>
+            </div>
+            <div class="block">
+                <h5>Книги</h5>
+                <p>
+                    Имам прочитано многу книги, но само една секогаш ја издвојувам како најомилена. Моја најомилена книга е "Вети ќе ме сакаш".<br>
+                    <img src="images/sakas.jpg" alt="Veti ke me sakas"> <br>
+                    Авторка на оваа книга е Ивана Наскова.
+                </p>
+            </div>
+            <div class="block">
+                <h5>Храна</h5>
+                <p>
+                    Од храна не јадам се. Единствено што можам да го одвојам е благото. Чоколади, торти, колачи.... превкусно.<br>
+                    <img src="images/cokolado.jpg" alt="Chocolate" style="width: 70%">
+                </p>
+            </div>
+        </div>
+
+        <div class="container" id="galery">
+            <h3> Галерија </h3>
+
+            <img src="images/galery7.jpg" alt="slika1" class="sliki">
+            <img src="images/galery2.jpg" alt="slika2" class="sliki">
+            <img src="images/galery3.jpg" alt="slika3" class="sliki">
+            <img src="images/galery4.jpg" alt="slika4" class="sliki">
+            <img src="images/galery5.jpg" alt="slika5" class="sliki">
+            <img src="images/galery6.jpg" alt="slika6" class="sliki">
+        </div>
+
+        <div class="container" id="blog">
+            <h3> Блог </h3>
+            <p> Jас исто така пишувам и блог. Мојот блог се однесува на моето најголемо хоби, а тоа е читањето. Па ако си љубител на книги, можеш да го посетиш мојот блог и да оставиш коментар за книги кои ти си ги прочитал, ти се омилени. Овде имаш линк до мојот <a href="blog.html" target="_blank">БЛОГ</a>. </p>
+        </div>
+
+        <div class="container" id="questionnaire">
+            <form>
+            <h3> Анкета за посетители! </h3>
+            <form method="post">
+
+                    <label>Име</label>
+                    <input type="text" name="First Name" placeholder="Овде твоето име">
+                    <br>
+                <br>
+                    <label>Презиме</label>
+                    <input type="text" name="Last Name" placeholder="Овде твоето презиме">
+                    <br>
+                <br>
+                    <label>Email</label>
+                    <input type="email" name="Email" placeholder="Овде твојот email">
+                    <br>
+                <br>
+                    <label>Пол</label>
+                    <select name="gender">
+                        <option value="male">Mашко</option>
+                        <option value="female">Женско</option>
+                        <option value="other">Друго</option>
+                    </select>
+                <br>
+                <br>
+                    <label>Возраст</label>
+                    <input type="number" name="Age" value="20">
+                <br>
+                <br>
+                    <label>Роденден</label>
+                    <input type="date" name="Birthday"><br>
+                    <br>
+                    <form>
+                        <label for="phone">Внеси го твојот телефонски број:</label>
+                        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+                    </form>
+                        <br>
+                    <form>
+                       <label> Дали имаме исти интереси? </label>
+                        <input type="checkbox" name="interests">Математика
+                        <input type="checkbox" name="interests"> Програмирање
+                        <input type="checkbox" name="interests">Книги
+                        <input type="checkbox" name="interests"> Филмови
+                    </form>
+                    <br>
+                    <label> Колку од 1 до 100 ти се допаѓа страницата?
+                    0<input type="range" value="50" min="0" max="100">100</label>
+                <br>
+                <div class="inlinebuttons">
+                    <button>Прати</button>
+                </div>
+            </form>
+        </form>
+        </div>
+
+        <div class="max-width" id="contact">
+           <div class="left">
+                <h3> Контактирај ме! </h3>
+                <p>Можеш слободно да ме контактираш, во секое време!
+                    Прати ми email <a href="mailto:ivanadineva66@gmail.com" target="_blank"> ivanadineva@gmail.com </a>. Или контактирај ме преку социјалната мрежа <a href="http://www.facebook.com" target="_blank">Facebook</a>. 
+                 </p>
+           </div>
+        </div>
+
+        <a class="fix-me button" href=""> Oди на почеток :) </a>
+
+        <footer id="main-footer">
+            <p> Ти благодарам на посетата, врати се повторно! </p>
+        </footer>
+
+    </body>
+</html>
