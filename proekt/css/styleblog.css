@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: linen;
+}
+
+h2{
+  color: lightcoral;
+}
+h3{
+  color: lightcoral;
+}
+a {
+    color: lightcoral;
+    text-decoration: none;
+    font-size: 15px;
+    padding-right: 15px;
+}
+em{
+  color: lightcoral;
+  font-size: 15px;
+}
+
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+/*  background: white;*/
+  text-shadow: -4px 4px 6px white;
+  color: whitesmoke;
+    background-image: url('../images/showcase.jpg');
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.img {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  margin-top: 20px;
+}
+
