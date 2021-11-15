@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Anketa</title>
+		<link rel="stylesheet" type="text/css" href="css/styleanketa.css" />
+        <script type="text/javascript">
+
+            function submit() {
+             document.getElementById("form").submit();}
+             function reset() {
+                 document.getElementById("form").reset();}
+          
+        </script>
+	</head>
+	<body>
+			<div class="header">
+                <script type="text/javascript">
+                     var name;
+                    name=window.prompt("Внеси го твоето име овде!");
+                    document.writeln("<h1> Анкета за " + name + "! :) </h1>");
+
+                    var helpArray = ["Enter your name in this input box.", "Enter your last name in this input box.", "Enter your email in this input box."];
+                    var helpText;
+                    function init(){
+                        helpText = document.getElementById("helpText");
+                        registerListeners(getElementById("name"), 0);
+                        registerListeners(getElementById("lastname"), 1);
+                        registerListeners(getElementById("email"), 2);
+
+                        var myForm = document.getElementById("myForm");
+                        myForm.addEventListener("submit", function(){
+                            return confirm("Are you sure you want to submit?");
+                        }, false);
+                        myForm.addEventListener("reset", function(){
+                            return confirm("Are you sure you want to reset?");
+                        }, false);
+                    }
+                    function registerListeners(object, messageNumber){
+                        object.addEventListener("focus", function() {
+                            helpText.innerHTML = helpArray[messageNumber];
+                        }, false);
+                        object.addEventListener("blur", function(){
+                            helpText.innerHTML= helpArray[6];
+                        }, false);
+                    }
+                    window.addEventListener("load", init, false);
+                </script>
+			</div>
+		        <br>
+		        <div class="container" id="questionnaire">
+            <form id="form">
+            <form method="post" id="form">
+
+                <script type="text/javascript">
+                    document.writeln("<h5> Овој текст овде е напишан со JavaScript! </h5>");
+                    document.writeln("<h6 style = 'color: firebrick' > "); 
+                    document.writeln("Текст со друга боја </h6>");
+                </script>
+
+                    <label>Име</label>
+                    <input id="name" type="text" name="First Name" placeholder="Овде твоето име">
+                    <br>
+                <br>
+                    <label>Презиме</label>
+                    <input id="lastname" type="text" name="Last Name" placeholder="Овде твоето презиме">
+                    <br>
+                <br>
+                    <label>Email</label>
+                    <input id="email" type="email" name="Email" placeholder="Овде твојот email">
+                    <br>
+                <br>
+                    <label>Пол</label>
+                    <select name="gender" id="mySelect">
+                        <option value="male">Mашко</option>
+                        <option value="female">Женско</option>
+                        <option value="other">Друго</option>
+                    </select>
+
+                    <p>Има вкупно <span id="demo">0</span> опции за пол.</p>
+
+                    <script>
+                    document.getElementById("demo").innerHTML =
+                    document.getElementById("mySelect").length;
+                    </script>
+
+                    <label>Возраст</label>
+                    <input type="number" name="Age" value="20">
+                <br>
+                <br>
+                    <label>Роденден</label>
+                    <input type="date" name="Birthday"><br>
+                        <br>
+                    <form>
+                       <label> Дали имаме исти интереси? </label>
+                        <input type="checkbox" name="interests">Математика
+                        <input type="checkbox" name="interests"> Програмирање
+                        <input type="checkbox" name="interests">Книги
+                        <input type="checkbox" name="interests"> Филмови
+                    </form>
+                    <label> Колку од 1 до 100 ти се допаѓа страницата?
+                    0<input type="range" value="50" min="0" max="100">100</label>
+                <br>
+                <br>
+                </form>
+        </form>
+                    <div class="inline1">
+                    <button onclick="submit()">Прати</button>
+                    </div>
+                    <div class="inline1">
+                    <button onclick="reset()">Избриши</button>
+                </div>
+                <br>
+                <br>
+        </div>
+
+	</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="css/styleblog.css" />
+  <script type="text/javascript">
+    
+    function start(){
+      var current = new Date();
+      document.getElementById("getMethods").innerHTML = "<p>Дата: " + current.getDate() + "." + current.getMonth() + "." + current.getFullYear() + "</p>" + "<p>Час: " + current.getHours() + ":" + current.getMinutes() + "</p>";
+    }
+    window.addEventListener("load", start, false);
+
+   // function submit() {
+          //   document.getElementById("form").submit();}
+    function reset() {
+                 document.getElementById("form").reset();}
+      var name;
+      var now = new Date();
+      var hour = now.getHours();
+      if(hour < 12)
+        document.write("<h3> Добро утро! </h3>");
+      if(hour >= 12){
+        hour = hour - 12;
+        if(hour<6)
+          document.write("<h3> Добар ден! </h3>");
+        if (hour >= 6)
+          document.write("<h3> Добра вечер! </h3>");
+      }
+
+      function myFunction() {
+        var x = document.getElementById("myText").value;
+        document.getElementById("demo").innerHTML = x;
+      }
+  </script>
+  </head>
+  <body>
+  <div class="header">
+    <h2 style="color: #343434;">Добредојде на мојот блог!
+        <img src="images/blognaslov.jpg" style="height: 100px; width: 100px;">
+    </h2>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>САКАМ КНИГИ!</h2>
+        <h5>Моето хоби е да читам книги, 23 Октомври, 2021</h5>
+          <img src="images/blog5.jpg" alt="kniga" style="width: 100%; height: 50%;">
+        <p>Aко и ти обожаваш да читаш книги како и јас, тогаш ова е совршеното место за љубители на пишаниот збор. Овде ќе дискутираме за мои и твои омилени книги, препораки за добри книги, емотивни, психолошки, љубовни...</p>
+        <a href="https://mk.wikipedia.org/wiki/%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0" target="_blank">
+        <button>Прочитај повеќе</button></a>
+      </div>
+      <div class="card">
+        <h2>Вети, ќе ме сакаш</h2>
+        <h5>Вети, ќе ме сакаш, 23 Октомври, 2021</h5>
+            <img src="images/blog4.jpg" alt="veti ke me sakas" style="width: 100%; height: 50%;">
+        <p>Ивана Наскова е родена 1989 година, Магистер по право од областа на деловно право и стручно лице по корпоративни комуникации и односи со јавност.
+          <br>
+          Автор е на романот "Совршениот странец" издаден 2017та година, "Вети, ќе ме сакаш" е нејзиниот втор роман.
+          <br>
+          Илина е млада и талентирана сликарка која ќе ја загуби љубовта на својот живот, заради своите погрешни животни одлуки ќе заврши во брак во кој нема љубов. Дали на крајот ќе успее да ја пронајде својата среќа и конечно да биде со мажот кој го сака?
+          <br>
+          "Вети, ќе ме сакаш" е приказна која не учи дека животот понекогаш не дава втора шанса.
+        </p>
+        <a href="https://www.facebook.com/NaskovaIvana" target="_blank">
+        <button>Прочитај повеќе</button></a>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>За мене</h2>
+       <img src="images/jas3.jpg" alt="slika od mene" style="height: 100%; width: 100%;">
+        <p>Добредојде на мојот блог! Моето име е Ивана Динева. Јас имам 20 години. Родена сум на <em>06 Mарт 2001.</em> Моментално сум студент на Факултетот за електротехника и информациски технологии. Ме интересираат: книги, филмови, математика и танцување.</p>
+      </div>
+
+      <div class="card">
+        
+          <label>Тука можеш ти да напишеш нешто на блогот</label>
+            <input type="text" id="myText" value="Тука...">
+        <section id="getMethods"></section>
+          <div class="inline1">
+          <button onclick="myFunction()">Испрати</button>
+                     </div>
+        <div class="inline1">
+          <button onclick="reset()">Избриши</button>
+        </div>  
+        <p id="demo"> </p>   
+      </div>
+
+      <div class="card">
+        <h3>Контактирај ме</h3>
+        <p>
+
+    <a href="mailto:ivanadineva66@gmail.com" target="_blank"> 
+  <img src="images/email.jpg" style="width: 35px; height: 35px;"> 
+      </a>
+                     
+
+    <a href="http://www.facebook.com" target="_blank">
+    <img src="images/f.jpg" style="width: 35px; height: 35px;"> 
+         </a> 
+         
+    <a href="http://www.instagram.com" target="_blank"> 
+    <img src="images/i.jpg" style="width: 35px; height: 35px;">  </a>      
+     <a href="https://github.com/dinevai/oweb" target="_blank">
+<img src="images/git.jpg" style="width: 35px; height: 35px;"> 
+                    </a>
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2> Ти благодарам на посетата, врати се повторно!</h2>
+  </div>
+
+  </body>
+</html>
