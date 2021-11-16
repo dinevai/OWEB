@@ -106,24 +106,17 @@
 
             <div class="inlinee">
                 <div class="inner">
-                    <button onclick="document.getElementById('myImage').src='images/heart1.png' " style="font-size: 10px;" onclick="like()"> 
+                    <button onclick="document.getElementById('myImage').src='images/srce2.png'; clickCounter(); " style="font-size: 10px;"> 
                     Like </button>
                 </div>
+                <div id="result" class="inline1"></div>
                 <div class="inner">
                     <img id="myImage" src="images/heart2.png" style="width: 15px; height: 15px;">
                 </div>
                 <div class="inner">
-                    <button onclick="document.getElementById('myImage').src='images/heart2.png' " style="font-size:10px;">
+                    <button onclick="document.getElementById('myImage').src='images/heart2.png'; clickCounterMinus(); " style="font-size:10px;">
                      Unlike</button> 
                 </div>
-
-                <div class="inline1">      
-                 <p>
-                    <button onclick="clickCounter()" type="button" style="font-size: 10px;">
-                    Like</button>
-                 </p>
-                </div>
-                <div id="result" class="inline1"></div>
             </div>
 
    <form action = "#">
@@ -165,3 +158,5 @@
         </footer>
     </body>
 </html>
+
+
