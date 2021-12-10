@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+$(document).ready(function(){
+  $("#myInput2").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) == -1 || value=="")
+    });
+  });
+});
+</script>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid lightpink;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: lightpink;
+}
+input{
+  border: 2px solid lightpink;
+  border-radius: 2px;
+  background-color: lightpink;
+  color: white;
+}
+h2{
+  color: hotpink;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Филтер Табела</h2>
+<p>Напиши нешто во полето за да побараш во табелата, за име на книга, автор и цена: (Под а) ќе бара според внесеното, под б) ќе покаже се освен внесеното).
+</p>  
+<input id="myInput" type="text" placeholder="Тука барај a)...">
+<input id="myInput2" type="text" placeholder="Тука барај б)...">
+<br><br>
+
+<table>
+  <thead>
+  <tr>
+    <th>Име на книга</th>
+    <th>Автор</th>
+    <th>Цена</th>
+  </tr>
+  </thead>
+  <tbody id="myTable">
+  <tr>
+    <td>Островот на исчезнатите дрвја</td>
+    <td>Елиф Шафак</td>
+    <td>500 денари</td>
+  </tr>
+  <tr>
+    <td>Капе времето</td>
+    <td>Виолета Танчева-Златева</td>
+    <td>200 денари</td>
+  </tr>
+  <tr>
+    <td>Птиците умираат пеејќи</td>
+    <td>Колин Мекалоу</td>
+    <td>600 денари</td>
+  </tr>
+  <tr>
+    <td>Страв</td>
+    <td>Стефан Миленков</td>
+    <td>250 денари</td>
+  </tr>
+  <tr>
+    <td>Желбата на ежот</td>
+    <td>Тон Телеген</td>
+    <td>280 денари</td>
+  </tr>
+  <tr>
+    <td>Пеам јас и планината танцува</td>
+    <td>Ирене Сола</td>
+    <td>300 денари</td>
+  </tr>
+
+  <tr>
+    <td>Во војната и љубовта</td>
+    <td>Верица Митева</td>
+    <td>250 денари</td>
+  </tr>
+  <tr>
+    <td>Од жарјето</td>
+    <td>Али Мартинез</td>
+    <td>400 денари</td>
+  </tr>
+
+  </tbody>
+</table>
+  
+<p>Изработено од Ивана Динева.</p>
+
+</body>
+</html>
