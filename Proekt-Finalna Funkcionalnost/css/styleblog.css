@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+h2{
+  color: #343434;
+}
+h3{
+  color: #343434;
+}
+a {
+    color: firebrick;
+    text-decoration: none;
+    font-size: 15px;
+    padding-right: 15px;
+}
+em{
+  color: firebrick;
+  font-size: 15px;
+}
+
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: -4px 4px 6px white;
+  color: lightcoral;
+  background-image: url('../images/proba21.jpg');
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.img {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+img:hover,
+img:focus,
+img:active {
+    transform: scale(1.1);
+}
+input{
+    padding-top: 10px;
+    resize: none;
+    height: 80px;
+    width: 80%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 12px;
+    font-family: arial;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+button {
+    color: #fff;
+    display: block;
+    width: 100px !important;
+    height: 30px;
+    outline: none;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 2px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    background: firebrick;
+    border: 2px solid firebrick;
+    transition: all 0.3s ease;
+        font-family: arial;
+}
+
+    button:hover {
+        color: firebrick;
+        background: none;
+            font-family: arial;
+    }
+
+button-area {
+    display: flex;
+    align-items: center;
+
+}
+.inline1{
+  display: inline-block;
+}
