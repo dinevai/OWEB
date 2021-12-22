@@ -206,7 +206,7 @@ function preview_image(event) {
             $('.scroll-up-btn').removeClass("show");
         }
     });
-    // slide-up script
+    
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
         // removing smooth scroll on slide-up button click
@@ -216,12 +216,12 @@ function preview_image(event) {
         // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
     });
-    // toggle menu/navbar script
+   
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
-    // typing text animation script
+    
     var typed = new Typed(".typing", {
         strings: [],
         typeSpeed: 100,
@@ -234,7 +234,7 @@ function preview_image(event) {
         backSpeed: 60,
         loop: true
     });
-    // owl carousel script
+   
     $('.carousel').owlCarousel({
         margin: 20,
         loop: true,
